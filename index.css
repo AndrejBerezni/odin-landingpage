@@ -1,0 +1,45 @@
+:root {
+    --darkbg: #1F2937;
+    --lightblue: #3882F6;
+    --headerwhite: #F9FAF8;
+    --textwhite: #E5E7EB;
+    --darktext: #1F2937;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVBAR */
+
+header {
+    background-color: var(--darkbg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h3 {
+    color: var(--headerwhite);
+}
+
+a {
+    text-decoration: none;
+    color: var(--textwhite)
+    
+}
+
+#links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* HERO */
