@@ -14,6 +14,7 @@ body {
 
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 section {
@@ -34,7 +35,7 @@ header {
     justify-content: space-around;
 }
 
-h3 {
+header > h3 {
     color: var(--headerwhite);
 }
 
@@ -90,9 +91,7 @@ a {
 /* ILLUSTRATIONS */
 
 #illustrations {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 #illustrations > h2 {
@@ -117,11 +116,91 @@ a {
 
 .illustration > img {
     aspect-ratio: 1/1;
-    border: 2px solid var(--lightblue);
+    border: 3px solid var(--lightblue);
     width: 16vw;
     border-radius: 5px;
 }
 
 .illustration >p {
     text-align: center;
+}
+
+/* QUOTE-SECTION */
+
+#quote-section {
+    background-color: var(--textwhite);
+    align-items: center;
+    padding: 5vh 0;
+}
+
+.quote-container {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote {
+    font-size: 28px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 0;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.author {
+    align-self: flex-end;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* CALL-TO-ACTION */
+
+#call {
+    align-items: center;
+    padding: 7vh;
+}
+
+.call-to-action {
+    width: 80vw;
+    background-color: var(--lightblue);
+    padding: 1.5vh 10vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.call-text{
+    color: white;
+}
+
+.call-text > h3 {
+    margin-bottom: 2px;
+}
+
+.call-text > p {
+    margin-top: 2px;
+    color: var(--textwhite)
+}
+
+.call-to-action > button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 25px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color:var(--textwhite);
 }
